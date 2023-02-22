@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 40px;
+			margin-top: 50px;
+			margin-bottom: 100px;
+		}
+
+		label {
+			font-size: 20px;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+
+		input {
+			font-size: 20px;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 300px;
+			margin-bottom: 30px;
+		}
+
+		button {
+			font-size: 20px;
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		p {
+			font-size: 20px;
+			line-height: 1.5;
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Hello Visitor!</h1>
+
+	<div style="text-align: center;">
+		<label for="name">Please enter your name:</label>
+		<input type="text" id="name">
+		<button onclick="redirect()">Submit</button>
+	</div>
+
+	<script>
+		function redirect() {
+			let name = document.getElementById("name").value;
+			window.location.href = "page22.html?name=" + name;
+		}
+	</script>
+</body>
+</html>
